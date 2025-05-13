@@ -29,6 +29,8 @@
   flex-direction: column;
 
   border-radius: 5%;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
 }
 .activity-title {
   display: flex;

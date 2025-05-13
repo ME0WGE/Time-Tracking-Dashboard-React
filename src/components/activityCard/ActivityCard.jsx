@@ -24,6 +24,7 @@ export default function ActivityCard({
 
   // Set appropriate text based on selected timeframe
   let timeFrameText;
+
   if (selectedTimeframe === "daily") {
     timeFrameText = "Yesterday - ";
   } else if (selectedTimeframe === "weekly") {
@@ -38,7 +39,7 @@ export default function ActivityCard({
     <>
       <div className="activity-card">
         <div className="img-div">
-        <img src={imageSource} alt={altText} />
+          <img src={imageSource} alt={altText} />
         </div>
         <div className="activity-card-body">
           <div className="activity-title">

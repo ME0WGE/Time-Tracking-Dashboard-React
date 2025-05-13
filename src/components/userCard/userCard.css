@@ -1,0 +1,44 @@
+.user-card {
+  background: hsl(246, 80%, 60%);
+
+  width: 300px;
+
+  border-radius: 5%;
+
+  display: flex;
+  flex-direction: column;
+}
+.user-div {
+  padding: 30px;
+}
+.user-div > p {
+  opacity: 50%;
+}
+.user-div > h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+.user-img-div > img {
+  width: 33%;
+
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.user-card-body {
+  background: hsl(235, 46%, 20%);
+  padding: 10%;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 5%;
+}
+#daily {
+  cursor: pointer;
+}
+#weekly {
+  cursor: pointer;
+}
+#monthly {
+  cursor: pointer;
+}

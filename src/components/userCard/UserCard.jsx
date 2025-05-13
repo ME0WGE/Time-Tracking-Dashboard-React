@@ -5,6 +5,10 @@ export default function UserCard() {
   const userImageSource = `src/assets/images/${userImage}`;
   const altText = `image of ${userImage}`;
 
+  function handleClick(e) {
+    e.target.style.color = "red";
+  }
+
   return (
     <>
       <div className="user-card">
@@ -20,9 +24,15 @@ export default function UserCard() {
           </h1>
         </div>
         <div className="user-card-body">
-          <h3 id="daily">Daily</h3>
-          <h3 id="weekly">Weekly</h3>
-          <h3 id="monthly">Monthly</h3>
+          <h3 id="daily" onClick={handleClick}>
+            Daily
+          </h3>
+          <h3 id="weekly" onClick={handleClick}>
+            Weekly
+          </h3>
+          <h3 id="monthly" onClick={handleClick}>
+            Monthly
+          </h3>
         </div>
       </div>
     </>
