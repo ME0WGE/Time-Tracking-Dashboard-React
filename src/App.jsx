@@ -1,6 +1,7 @@
 // import { useState } from "react";
 
 import "./App.css";
+import Activity from "./components/activity/Activity";
 import ActivityCard from "./components/activityCard/ActivityCard";
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <>
       {/* User Card */}
       {/* Activity Cards */}
-      <ActivityCard imageSrc="icon-work.svg"/>
+      <Activity />
     </>
   );
 }
