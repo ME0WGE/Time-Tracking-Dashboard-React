@@ -1,15 +1,19 @@
-// import { useState } from "react";
-
+import { useState } from "react";
 import "./App.css";
 import Activity from "./components/activity/Activity";
-import ActivityCard from "./components/activityCard/ActivityCard";
 
 function App() {
+  const [activeTimeframe, setActiveTimeframe] = useState("weekly");
+
+  const handleTimeframeChange = (timeframe) => {
+    setActiveTimeframe(timeframe);
+  };
+
   return (
     <>
       {/* User Card */}
       {/* Activity Cards */}
-      <Activity />
+      <Activity selectedTimeframe={activeTimeframe} />
     </>
   );
 }

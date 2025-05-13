@@ -1,0 +1,41 @@
+.activity-card {
+  background: hsl(43, 84%, 65%);
+
+  width: 300px;
+}
+.activity-card-body {
+  background: hsl(235, 46%, 20%);
+  padding: 10%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+.activity-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 500;
+}
+
+.activity-timeframes {
+  display: flex;
+  flex-direction: column;
+
+  align-items: start;
+
+  gap: 10px;
+}
+
+.activity-timeframes h1 {
+  font-size: 3rem;
+
+  font-weight: 300;
+}
+.activity-timeframes h3 {
+  font-weight: 400;
+
+  color: hsl(236, 100%, 87%);
+}

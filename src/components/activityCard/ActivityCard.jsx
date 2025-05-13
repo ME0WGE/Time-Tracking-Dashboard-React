@@ -1,12 +1,12 @@
 import "./activityCard.css";
-import { useState } from "react";
 
-export default function ActivityCard({ title, timeframes, imageSrc }) {
-  // This tracks which timeframe is selected - default: "weekly"
-  const [selectedTimeFrame, setSelectedTimeFrame] = useState("weekly");
-
-  //div.activity-card path to image using prop
-  //div.activity-card alternative text
+export default function ActivityCard({
+  title,
+  timeframes,
+  imageSrc,
+  selectedTimeframe,
+}) {
+  // div.activity-card path to image using prop
   const imageSource = `src/assets/images/${imageSrc}`;
   const altText = `image of ${title}`;
 
@@ -16,24 +16,23 @@ export default function ActivityCard({ title, timeframes, imageSrc }) {
   const ellipsisAltText = "image of ellipsis icon";
 
   // Get current timeframe data
-  const current = timeframes[selectedTimeFrame].current;
-  const previous = timeframes[selectedTimeFrame].previous;
+  const current = timeframes[selectedTimeframe].current;
+  const previous = timeframes[selectedTimeframe].previous;
 
-  // Display current timeframe data
+  // Format display strings
   const currentTimeFrameTime = `${current}hrs`;
 
-  // Display previous timeframe data
-  const previousTimeFrameTime = `${previous}hrs`;
-
+  // Set appropriate text based on selected timeframe
   let timeFrameText;
-
-  if (selectedTimeFrame === "daily") {
+  if (selectedTimeframe === "daily") {
     timeFrameText = "Yesterday - ";
-  } else if (selectedTimeFrame === "weekly") {
+  } else if (selectedTimeframe === "weekly") {
     timeFrameText = "Last Week - ";
   } else {
     timeFrameText = "Last Month - ";
   }
+
+  const previousTimeFrameTime = `${previous}hrs`;
 
   return (
     <>
