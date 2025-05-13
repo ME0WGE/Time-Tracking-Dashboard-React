@@ -37,7 +37,9 @@ export default function ActivityCard({
   return (
     <>
       <div className="activity-card">
+        <div className="img-div">
         <img src={imageSource} alt={altText} />
+        </div>
         <div className="activity-card-body">
           <div className="activity-title">
             {activityTitle}
