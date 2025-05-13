@@ -1,0 +1,33 @@
+/*
+/===========================================================\
+|                                                           |
+|                                                           |
+|                       Import Fonts                        |
+|                                                           |
+|                                                           |
+/===========================================================\
+*/
+/* Rubik */
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  /* Default */
+  margin: 0;
+  padding: 0;
+
+  /* Typography */
+  font-family: "Rubik";
+  font-size: 18px;
+
+  /* Text */
+  color: white;
+}
+
+body {
+  /* Default */
+  margin: 0;
+  padding: 0;
+
+  /* Body background color: Very dark blue */
+  background-color: hsl(226, 43%, 10%);
+}
