@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./activityCard.css";
 
 export default function ActivityCard({
@@ -35,9 +36,38 @@ export default function ActivityCard({
 
   const previousTimeFrameTime = `${previous}hrs`;
 
+  let bgColor = "";
+
+  if (title === "Work") {
+    bgColor = "blue";
+  }
+  switch (title) {
+    case "Work":
+      bgColor = "hsl(15, 100%, 70%)";
+      break;
+    case "Play":
+      bgColor = "hsl(195, 74%, 62%)";
+      break;
+    case "Study":
+      bgColor = "hsl(348, 100%, 68%)";
+      break;
+    case "Exercise":
+      bgColor = "hsl(145, 58%, 55%)";
+      break;
+    case "Social":
+      bgColor = "hsl(264, 64%, 52%)";
+      break;
+    case "SelfCare":
+      bgColor = "hsl(43, 84%, 65%)";
+      break;
+
+    default:
+      break;
+  }
+
   return (
     <>
-      <div className="activity-card">
+      <div className="activity-card" style={{ backgroundColor: bgColor }}>
         <div className="img-div">
           <img src={imageSource} alt={altText} />
         </div>

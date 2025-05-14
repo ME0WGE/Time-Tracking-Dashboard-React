@@ -6,7 +6,13 @@ export default function UserCard() {
   const altText = `image of ${userImage}`;
 
   function handleClick(e) {
-    e.target.style.color = "red";
+    e.target.classList.toggle("active");
+
+    {
+      e.target.classList.contains("active")
+        ? (e.target.style.color = "white")
+        : (e.target.style.opacity = "0.5");
+    }
   }
 
   return (
