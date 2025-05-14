@@ -18,9 +18,8 @@ export default function UserCard() {
           </div>
           <p>Report for</p>
           <h1>
-            Jeremy
-            <br />
-            Robson
+            <span id="jeremy">Jeremy</span>
+            <span id="robson">Robson</span>
           </h1>
         </div>
         <div className="user-card-body">
