@@ -38,6 +38,11 @@
 
   margin-top: -18px;
 }
+.activity-card-body:hover {
+  background: #34397b;
+
+  cursor: pointer;
+}
 .activity-title {
   display: flex;
   justify-content: space-between;
