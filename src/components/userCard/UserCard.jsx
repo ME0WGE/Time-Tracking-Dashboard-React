@@ -16,11 +16,13 @@ export default function UserCard() {
           <div className="user-img-div">
             <img src={userImageSource} alt={altText} />
           </div>
-          <p>Report for</p>
-          <h1>
-            <span id="jeremy">Jeremy</span>
-            <span id="robson">Robson</span>
-          </h1>
+          <div className="user-text-content">
+            <p>Report for</p>
+            <h1>
+              <span id="jeremy">Jeremy</span>
+              <span id="robson">Robson</span>
+            </h1>
+          </div>
         </div>
         <div className="user-card-body">
           <h3 id="daily" onClick={handleClick}>

@@ -71,3 +71,20 @@
 
   margin: 0;
 }
+
+@media (min-width: 375px) and (max-width: 960px) {
+  .activity-card {
+    width: 90vw;
+  }
+  .activity-timeframes {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .activity-card-body {
+    height: 18vh;
+  }
+  .activity-title {
+    padding: 0;
+  }
+}
