@@ -38,9 +38,6 @@ export default function ActivityCard({
 
   let bgColor = "";
 
-  if (title === "Work") {
-    bgColor = "blue";
-  }
   switch (title) {
     case "Work":
       bgColor = "hsl(15, 100%, 70%)";
