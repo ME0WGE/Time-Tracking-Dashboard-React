@@ -5,6 +5,8 @@
 
   border-radius: 5%;
 
+  overflow: hidden;
+
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -13,13 +15,16 @@
   display: flex;
   justify-content: end;
 
-  position: relative;
+  /* overflow: hidden; */
+  /* position: relative; */
+
+  margin-top: -13px;
 }
 .img-div > img {
   width: 79px;
   height: 79px;
 
-  /* z-index: -1; */
+  margin-right: 5%;
 }
 .activity-card-body {
   background: hsl(235, 46%, 20%);
@@ -29,8 +34,12 @@
   flex-direction: column;
 
   border-radius: 5%;
-  border-top-right-radius: 10%;
-  border-top-left-radius: 10%;
+  border-top-right-radius: 8%;
+  border-top-left-radius: 8%;
+
+  z-index: 1;
+
+  margin-top: -18px;
 }
 .activity-title {
   display: flex;
