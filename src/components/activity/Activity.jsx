@@ -3,13 +3,16 @@ import data from "../../data/data.json";
 import ActivityCard from "../activityCard/ActivityCard";
 import UserCard from "../userCard/UserCard";
 
-export default function Activity({ selectedTimeframe }) {
+export default function Activity({ selectedTimeframe, handleTimeframeChange }) {
   return (
     <>
       {/* Activity Cards */}
       <div className="activities-container">
         <div className="userCard-div">
-          <UserCard />
+          <UserCard
+            selectedTimeframe={selectedTimeframe}
+            onTimeframeChange={handleTimeframeChange}
+          />
         </div>
         <div className="activityCard-div">
           {data.map((activity, index) => (

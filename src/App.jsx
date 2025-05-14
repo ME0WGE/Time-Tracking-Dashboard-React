@@ -13,7 +13,10 @@ function App() {
   return (
     <>
       {/* Activity Cards */}
-      <Activity selectedTimeframe={activeTimeframe} />
+      <Activity
+        selectedTimeframe={activeTimeframe}
+        handleTimeframeChange={handleTimeframeChange}
+      />
     </>
   );
 }
