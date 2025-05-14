@@ -6,21 +6,20 @@ export default function UserCard({ selectedTimeframe, onTimeframeChange }) {
   const altText = `image of ${userImage}`;
 
   function handleClick(e) {
-    // convert h3's text content to lowercase so it matches timeframe requirements
+    // Convert h3's text content to lowercase so it matches timeframe requirements
     const timeframe = e.target.textContent.toLowerCase();
 
     // Call the parent component's handler function
     onTimeframeChange(timeframe);
 
-    // Update active class for styling
+    // Update active elements for styling
     const timeframeOptions = document.querySelectorAll(".user-card-body h3");
     timeframeOptions.forEach((h3) => {
       h3.classList.remove("active");
       h3.style.opacity = "0.5";
     });
 
-    console.log(e.target);
-
+    // Update h3's style when active
     e.target.classList.add("active");
     e.target.style.color = "hsl(236, 100%, 87%)";
     e.target.style.opacity = "1";

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./activityCard.css";
 
 export default function ActivityCard({
@@ -26,18 +25,27 @@ export default function ActivityCard({
   // Set appropriate text based on selected timeframe
   let timeFrameText;
 
-  if (selectedTimeframe === "daily") {
-    timeFrameText = "Yesterday - ";
-  } else if (selectedTimeframe === "weekly") {
-    timeFrameText = "Last Week - ";
-  } else {
-    timeFrameText = "Last Month - ";
+  // Display appropriate timeframe text
+  switch (selectedTimeframe) {
+    case "daily":
+      timeFrameText = "Yesterday - ";
+      break;
+    case "weekly":
+      timeFrameText = "Last Week - ";
+      break;
+    case "monthly":
+      timeFrameText = "Last Month - ";
+      break;
+
+    default:
+      break;
   }
 
   const previousTimeFrameTime = `${previous}hrs`;
 
   let bgColor = "";
 
+  // Display appropriate backgroundColor based on the title
   switch (title) {
     case "Work":
       bgColor = "hsl(15, 100%, 70%)";
