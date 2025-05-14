@@ -10,9 +10,20 @@
 }
 .activityCard-div {
   display: flex;
+  justify-content: center;
+  align-items: center;
 
   flex-wrap: wrap;
   max-width: 1000px;
 
   gap: 30px;
+}
+
+@media (min-width: 375px) and (max-width: 960px) {
+  .activities-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+
 }
