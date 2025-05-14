@@ -12,8 +12,6 @@ function App() {
 
   return (
     <>
-      {/* User Card */}
-      <UserCard />
       {/* Activity Cards */}
       <Activity selectedTimeframe={activeTimeframe} />
     </>
