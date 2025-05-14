@@ -7,12 +7,12 @@ export default function ActivityCard({
   selectedTimeframe,
 }) {
   // div.activity-card path to image using prop
-  const imageSource = `src/assets/images/${imageSrc}`;
+  const imageSource = new URL(`../../assets/images/${imageSrc}`, import.meta.url).href;
   const altText = `image of ${title}`;
 
   // div.activity-title title & path to icon
   const activityTitle = title;
-  const ellipsisIcon = `src/assets/images/icon-ellipsis.svg`;
+  const ellipsisIcon = new URL('../../assets/images/icon-ellipsis.svg', import.meta.url).href;
   const ellipsisAltText = "image of ellipsis icon";
 
   // Get current timeframe data

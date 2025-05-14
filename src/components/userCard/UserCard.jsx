@@ -2,7 +2,10 @@ import "./userCard.css";
 
 export default function UserCard({ selectedTimeframe, onTimeframeChange }) {
   const userImage = `image-jeremy.png`;
-  const userImageSource = `src/assets/images/${userImage}`;
+  const userImageSource = new URL(
+    `../../assets/images/${userImage}`,
+    import.meta.url
+  ).href;
   const altText = `image of ${userImage}`;
 
   function handleClick(e) {
