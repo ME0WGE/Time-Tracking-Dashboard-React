@@ -37,11 +37,13 @@
   border-bottom-right-radius: 15px;
 
   margin-top: -18px;
+
+  transition: all 350ms;
 }
 .activity-card-body:hover {
   background: #34397b;
 
-  cursor: pointer;
+  transform: scale(1.03);
 }
 .activity-title {
   display: flex;
@@ -51,6 +53,14 @@
   font-weight: 500;
 
   padding-bottom: 1.5rem;
+
+  transition: all 350ms;
+}
+.activity-title > img:hover {
+  cursor: pointer;
+
+  transition: all 500ms;
+  transform: scale(1.15);
 }
 
 .activity-timeframes {
