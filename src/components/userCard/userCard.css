@@ -51,6 +51,14 @@
 }
 .user-card-body > h3 {
   color: hsl(236, 100%, 87%);
+
+  width: fit-content;
+}
+.user-card-body > h3:hover {
+  color: white;
+  opacity: 1;
+
+  transform: scale(1.05);
 }
 
 #daily {
