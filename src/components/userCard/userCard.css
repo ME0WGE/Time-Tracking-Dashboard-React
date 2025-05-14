@@ -39,6 +39,13 @@
 
   border: 3px solid white;
   border-radius: 50%;
+
+  transition: all 350ms;
+}
+.user-img-div > img:hover {
+  transform: scale(1.05);
+
+  cursor: pointer;
 }
 
 .user-card-body {
@@ -59,6 +66,11 @@
   opacity: 1;
 
   transform: scale(1.05);
+}
+.user-card-body > h3.active {
+  transform: scale(1);
+
+  pointer-events: none;
 }
 
 #daily {
